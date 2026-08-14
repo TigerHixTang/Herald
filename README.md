@@ -1,10 +1,10 @@
-# BossbarLib
+# Herald
 
 A small bossbar library for Paper 1.21+. It gives every player a persistent,
 per-player bossbar without spawning fake entities, touching NMS, or relying on
 reflection.
 
-## Why BossbarLib?
+## Why Herald?
 
 - Built on the native Paper bossbar API, so it works across supported Paper
   versions with no per-version code.
@@ -32,7 +32,7 @@ Maven:
 
 <dependency>
     <groupId>me.tigerhixtang.lib</groupId>
-    <artifactId>bossbar</artifactId>
+    <artifactId>herald</artifactId>
     <version>2.0.0</version>
     <scope>provided</scope>
 </dependency>
@@ -46,15 +46,15 @@ repositories {
 }
 
 dependencies {
-    compileOnly("me.tigerhixtang.lib:bossbar:2.0.0")
+    compileOnly("me.tigerhixtang.lib:herald:2.0.0")
 }
 ```
 
-If you shade BossbarLib into your own plugin, register the plugin instance from
+If you shade Herald into your own plugin, register the plugin instance from
 your `onEnable()`:
 
 ```java
-BossbarLib.setPluginInstance(this);
+Herald.setPluginInstance(this);
 ```
 
 ### API
@@ -63,7 +63,7 @@ Show a bossbar:
 
 ```java
 Player player = ...;
-Bossbar bossbar = BossbarLib.getHandler().getBossbar(player);
+Bossbar bossbar = Herald.getHandler().getBossbar(player);
 bossbar.setMessage(ChatColor.GOLD + "Cooking...");
 bossbar.setPercentage(0.75f);
 ```
@@ -71,13 +71,13 @@ bossbar.setPercentage(0.75f);
 Check whether a player has a bossbar:
 
 ```java
-boolean has = BossbarLib.getHandler().hasBossbar(player);
+boolean has = Herald.getHandler().hasBossbar(player);
 ```
 
 Clear it:
 
 ```java
-BossbarLib.getHandler().clearBossbar(player);
+Herald.getHandler().clearBossbar(player);
 ```
 
 ## Building

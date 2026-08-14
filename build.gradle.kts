@@ -31,6 +31,6 @@ tasks {
     }
 
     jar {
-        archiveFileName.set("BossbarLib-${version}.jar")
+        archiveFileName.set("Herald-${version}.jar")
     }
 }

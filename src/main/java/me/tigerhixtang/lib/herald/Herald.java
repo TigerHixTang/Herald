@@ -1,21 +1,21 @@
-package me.tigerhixtang.lib.bossbar;
+package me.tigerhixtang.lib.herald;
 
-import me.tigerhixtang.lib.bossbar.handler.BossbarHandler;
-import me.tigerhixtang.lib.bossbar.handler.PaperBossbarHandler;
+import me.tigerhixtang.lib.herald.handler.BossbarHandler;
+import me.tigerhixtang.lib.herald.handler.PaperBossbarHandler;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /**
- * Entry point of BossbarLib. When used as a standalone plugin, the plugin
+ * Entry point of Herald. When used as a standalone plugin, the plugin
  * instance is registered automatically. When shaded into your own plugin,
  * call {@link #setPluginInstance(Plugin)} from {@code onEnable()}.
  */
-public final class BossbarLib extends JavaPlugin {
+public final class Herald extends JavaPlugin {
 
     private static Plugin instance;
     private static BossbarHandler handler;
 
-    private BossbarLib() {
+    private Herald() {
     }
 
     public static Plugin getPluginInstance() {
@@ -23,10 +23,10 @@ public final class BossbarLib extends JavaPlugin {
     }
 
     /**
-     * Binds BossbarLib to a plugin instance. The first call wins; calling this
+     * Binds Herald to a plugin instance. The first call wins; calling this
      * method again after initialization has no effect.
      *
-     * @param plugin the plugin that owns BossbarLib
+     * @param plugin the plugin that owns Herald
      */
     public static void setPluginInstance(Plugin plugin) {
         if (instance != null) {
@@ -41,7 +41,7 @@ public final class BossbarLib extends JavaPlugin {
     }
 
     public static void setHandler(BossbarHandler handler) {
-        BossbarLib.handler = handler;
+        Herald.handler = handler;
     }
 
     @Override

@@ -27,7 +27,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: BossbarLib
+          name: Herald
           path: target/*.jar
 
       - name: Publish release

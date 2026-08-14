@@ -1,6 +1,6 @@
-name: BossbarLib
+name: Herald
 version: 2.0.0
 description: A simple, clean and performant bossbar library for Paper 1.21+.
 author: TigerHixTang
-main: me.tigerhixtang.lib.bossbar.BossbarLib
+main: me.tigerhixtang.lib.herald.Herald
 api-version: '1.21'

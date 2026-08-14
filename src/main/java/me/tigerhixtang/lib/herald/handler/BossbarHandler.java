@@ -1,6 +1,6 @@
-package me.tigerhixtang.lib.bossbar.handler;
+package me.tigerhixtang.lib.herald.handler;
 
-import me.tigerhixtang.lib.bossbar.type.Bossbar;
+import me.tigerhixtang.lib.herald.type.Bossbar;
 import org.bukkit.entity.Player;
 
 /**

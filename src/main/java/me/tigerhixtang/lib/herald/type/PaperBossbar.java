@@ -1,6 +1,6 @@
-package me.tigerhixtang.lib.bossbar.type;
+package me.tigerhixtang.lib.herald.type;
 
-import me.tigerhixtang.lib.bossbar.common.Maths;
+import me.tigerhixtang.lib.herald.common.Maths;
 import org.bukkit.Bukkit;
 import org.bukkit.NamespacedKey;
 import org.bukkit.boss.BarColor;

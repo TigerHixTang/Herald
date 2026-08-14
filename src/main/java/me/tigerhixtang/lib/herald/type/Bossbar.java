@@ -1,4 +1,4 @@
-package me.tigerhixtang.lib.bossbar.type;
+package me.tigerhixtang.lib.herald.type;
 
 /**
  * A bossbar attached to a player.

@@ -1,4 +1,4 @@
-package me.tigerhixtang.lib.bossbar.common;
+package me.tigerhixtang.lib.herald.common;
 
 /**
  * Small numeric helpers shared by the library.
